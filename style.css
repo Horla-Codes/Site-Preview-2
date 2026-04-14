@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #252B43;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a,
+div a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover,
+div a:hover {
+    color: #FFC107;
+}
+
+.join_us {
+    background-color: #25A4F3;
+    color: #252B43;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    margin-top: 60px;
+}
+
+.welcome {
+    color: #22A6F1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.Subheading {
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get_quote {
+    background-color: #22A6F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.learn_more {
+    background: transparent;
+    color: #22A6F1;
+    border: 2px solid #22A6F1;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Cards */
+.main_card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: white;
+    color: black;
+    width: 280px;
+    /* balanced padding for all card */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 16px;
+
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Base icon style */
+.card .icon {
+    padding: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: fit-content;
+    background-color: #F8D7DA;
+}
+
+.card .icon i {
+    color: #c92500;
+}
+
+/* Green icon version */
+.card .icon.green {
+    background-color: #B9EAA8;
+}
+
+.card .icon.green i {
+    color: #56AC65;
+}
+
+.card.active {
+    background: #1ea7d7;
+    color: white;
+}
+
+.card.active h1,
+.card.active p {
+    color: white;
+}
+
+.card.active .icon {
+    background-color: white;
+}
+
+.card.active .icon i {
+    color: #22A6F1;
+}
+
+/* Footer */
+.footer{
+    background: #1b2036;
+    padding: 40px 20px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-content p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Social Icons */
+.social_icons a{
+    color: #aaa;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* Hover Glow Effect */
+.social_icons a:hover{
+    color: #22A6F1;
+    transform: translateY(-5px) scale(1.2);
+    text-shadow: 0 0 10px #22A6F1;
+}
