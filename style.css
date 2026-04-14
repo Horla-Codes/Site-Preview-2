@@ -51,7 +51,10 @@ div a:hover {
 .hero {
     margin-top: 60px;
 }
-
+ 
+.hero h3{
+    font-size: 40px;
+}
 .welcome {
     color: #22A6F1;
     font-weight: bold;
@@ -166,6 +169,17 @@ div a:hover {
     color: #22A6F1;
 }
 
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin: 5px 0 10px 0;
+}
+
+.card.active .line {
+    background-color: white;
+}
+
 /* Footer */
 .footer{
     background: #1b2036;
@@ -198,7 +212,6 @@ div a:hover {
     transition: 0.3s ease;
 }
 
-/* Hover Glow Effect */
 .social_icons a:hover{
     color: #22A6F1;
     transform: translateY(-5px) scale(1.2);
